@@ -12,4 +12,25 @@
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
+    <!--ajax向后台提交数据接收后台数据，登录验证Demo-->
+    <servlet>
+        <servlet-name>getMessage</servlet-name>
+        <servlet-class></servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getMessage</servlet-name>
+        <url-pattern>/getMessage</url-pattern>
+    </servlet-mapping>
+
+    <!--实现带数据的页面跳转-->
+    <servlet>
+        <servlet-name>pageWithData</servlet-name>
+        <servlet-class></servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pageWithData</servlet-name>
+        <url-pattern>/pageWithData</url-pattern>
+    </servlet-mapping>
+
 </web-app>

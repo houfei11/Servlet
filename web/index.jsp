@@ -12,5 +12,29 @@
   </head>
   <body>
       Hello World !!
+      <li>ajax提交数据接收返回值</li><br/><br/>
+      <input type="text" id="username" name="username" placeholder="请输入用户名"><br/><br/>
+      <input type="password" id="password" name="password" placeholder="请输入密码"><br/><br/>
+      <input type="submit" onclick="ajaxFun()" value="点击提交">
+      <div>
+        <li id="getM" ></li>
+      </div>
   </body>
+</html>
+  <script type="text/javascript">
+      function ajaxFun(){
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          console.log(username+" "+password);
+          $.ajax({
+              type:"post",
+              url:"/getMessage",
+              data:"username="+username+"&password="+password,
+              success:function(message){
+                  document.getElementById("getM").innerHTML=message;
+              }
+          });
+      }
+
+  </script>
 </html>

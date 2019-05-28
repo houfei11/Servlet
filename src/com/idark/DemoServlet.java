@@ -8,17 +8,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-//@WebServlet(name = "DemoServlet", urlPatterns = "/myFirstServlet")
+@WebServlet(name = "DemoServlet", urlPatterns = "/myFirstServlet")
 public class DemoServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
+
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter writer = response.getWriter();
         writer.print("Hello, This is my First servlet");
+        response.sendRedirect("index.jsp");
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
+
     }
 }
