@@ -9,21 +9,23 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+        </sourceRoots>
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/out/production/MyFirstServlet" />
-    <output-test url="file://$MODULE_DIR$/out/test/MyFirstServlet" />
+    <output url="file://$MODULE_DIR$/../out/production/secondServlet" />
+    <output-test url="file://$MODULE_DIR$/../out/test/secondServlet" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/out" />
+      <sourceFolder url="file://$MODULE_DIR$/web/WEB-INF/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/web/WEB-INF/classes" />
     </content>
-    <content url="file://$MODULE_DIR$/out" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.53" level="application_server_libraries" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -34,7 +36,6 @@
         <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="javax.servlet.jsp-2.2.0.v201112011158" level="project" />
-    <orderEntry type="library" name="jstl-1.2" level="project" />
+    <orderEntry type="library" name="javax.servlet-api-3.0.1" level="project" />
   </component>
 </module>
