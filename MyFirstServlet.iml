@@ -32,5 +32,7 @@
         <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="javax.servlet.jsp-2.2.0.v201112011158" level="project" />
+    <orderEntry type="library" name="jstl-1.2" level="project" />
   </component>
 </module>
